@@ -1,0 +1,23 @@
+<h1><a id="user-content-python-niram" class="anchor" aria-hidden="true" href="#python-niram"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python Niram</h1>
+<p><a href="https://pypi.org/project/Niram/" rel="nofollow"><img src="https://github.com/aswanthabam/Niram/actions/workflows/python-package.yml/badge.svg?branch=main" alt="Python package" style="max-width: 100%;"></a> <a href="https://github.com/aswanthabam/Niram/actions/workflows/python-app.yml"><img src="https://github.com/aswanthabam/Niram/actions/workflows/python-app.yml/badge.svg" alt="Python application" style="max-width: 100%;"></a> <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c2ae20b76db68f78391120a6468c5d53de8a2eb74e25434cc9c384514168c7de/68747470733a2f2f62616467656e2e6e65742f62616467652f72656c656173652f76253230312e302e34"><img src="https://camo.githubusercontent.com/c2ae20b76db68f78391120a6468c5d53de8a2eb74e25434cc9c384514168c7de/68747470733a2f2f62616467656e2e6e65742f62616467652f72656c656173652f76253230312e302e34" data-canonical-src="https://badgen.net/badge/release/v%201.0.4" style="max-width: 100%;"></a>
+<a href="https://pypi.org/user/abam/" rel="nofollow"><img src="https://camo.githubusercontent.com/62bdf7842cc263d00ee4f81415bd2b69b8aac56d5999ae876af78c3089f4d692/68747470733a2f2f62616467656e2e6e65742f62616467652f69636f6e2f707970693f69636f6e3d70797069266c6162656c" alt="PyPi" data-canonical-src="https://badgen.net/badge/icon/pypi?icon=pypi&amp;label" style="max-width: 100%;"></a><a href="https://github.com/aswanthabam"><img src="https://camo.githubusercontent.com/6c75a5adc86ad62280ef996f44a2dbed9d6869833d1a75fc6dd23c78cc7b3626/68747470733a2f2f62616467656e2e6e65742f62616467652f69636f6e2f6769746875623f69636f6e3d676974687562266c6162656c" alt="GitHub" data-canonical-src="https://badgen.net/badge/icon/github?icon=github&amp;label" style="max-width: 100%;"></a> <a href="https://abam.herokuapp.com/projects/Niram" rel="nofollow"><img src="https://camo.githubusercontent.com/e3d3af3c11bbb286cf4725338b6c27168d94dea4189f01beb756a2f92ca559a9/68747470733a2f2f62616467656e2e6e65742f62616467652f4142414d2f766965772f" alt="ABAM" data-canonical-src="https://badgen.net/badge/ABAM/view/" style="max-width: 100%;"></a></p>
+<p>This is a simple module to get coloured text in linux, max , and also in android termux (not supported in windows CMD)</p>
+<h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+<h3><a id="user-content-using-pypi" class="anchor" aria-hidden="true" href="#using-pypi"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using pypi</h3>
+<p>You can install Niram using pypi. Execute..</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">python3 -m pip install Niram</span></pre></div>
+<h3><a id="user-content-using-setuppy" class="anchor" aria-hidden="true" href="#using-setuppy"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using setup.py</h3>
+<p>You can install Niram module by source code. Download source code from <a href="https://abam.herokuapp.com/projects/Niram" rel="nofollow">Here</a>
+Download the zip file and unzip the file.(Use <code>unzip</code> command) Then execute setup.py install.</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">cd Niram-1.0.4</span>
+<span class="pl-c1">python3 setup.py install</span></pre></div>
+<h2><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> <span class="pl-v">Niram</span> <span class="pl-k">import</span> <span class="pl-v">Colours</span>
+<span class="pl-v">Colours</span>().<span class="pl-en">colour</span>(<span class="pl-s1">colour_code</span>,<span class="pl-s1">your_text</span>,<span class="pl-s1">second</span><span class="pl-c1">=</span><span class="pl-s1">your_next_colour_code</span>)</pre></div>
+<p>This will return the formated text
+here colour_code is a number of the colour get it by executing</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">python3 -m Niram -c</span></pre></div>
+<p>This will list out all colours and responsible number
+Second argument is your text and third argument "second" is the background colour or any other colour you need</p>
+<h2><a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+<p>This module don't need any additional requirements</p>
