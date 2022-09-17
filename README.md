@@ -18,11 +18,11 @@ python -m pip install -r requirements.txt
 
 To convert markdown to HTMl run the following command:
 ```sh 
-python markdown.py
+python generate.py
 ```
 This will automatically detect the file named ```README.md``` and convert it to html and save it to ```README.html```. To explicitly enter the input and output files use the following syntex:
 ```sh 
-python markdown.py [input_file] [output_file]
+python generate.py [input_file] [output_file]
 ```
 
 The html generated have class names and styles similar to github markdown render. (Thanks to ```grip``` python package 😇). You can use the stylesheet and script given below to apply those styles.
