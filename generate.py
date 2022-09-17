@@ -2,6 +2,7 @@ import grip, sys
 
 def render(cont,file,outfile):
     html = grip.render_content(cont)
+    html = """<div class="Box-body px-5 pb-5"><article id="grip-content" class="markdown-body entry-content container-lg">""" + html +"</div></article>"
     print(html)
     if outfile is not None:
         outfile.write(html)

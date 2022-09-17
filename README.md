@@ -1,35 +1,38 @@
-# Python Niram
+# Markdown To HTML
 
-[![Python package](https://github.com/aswanthabam/Niram/actions/workflows/python-package.yml/badge.svg?branch=main)](https://pypi.org/project/Niram/) [![Python application](https://github.com/aswanthabam/Niram/actions/workflows/python-app.yml/badge.svg)](https://github.com/aswanthabam/Niram/actions/workflows/python-app.yml) <img src="https://badgen.net/badge/release/v%201.0.4"/>
-[![PyPi](https://badgen.net/badge/icon/pypi?icon=pypi&label)](https://pypi.org/user/abam/)[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/aswanthabam) [![ABAM](https://badgen.net/badge/ABAM/view/)](https://abam.herokuapp.com/projects/Niram)
+[![ABAM](https://badgen.net/badge/ABAM/view/)](https://abam.herokuapp.com/projects/Niram)
 
-This is a simple module to get coloured text in linux, max , and also in android termux (not supported in windows CMD)
-## Installation 
-### Using pypi
-You can install Niram using pypi. Execute..
-```console
-python3 -m pip install Niram
+## Installation
+
+First you need to install ```python``` and ```pip```.Then clone the git repository and move to that directory:
+```sh
+git clone https://github.com/AVC-Tech/MarkDownToHtml.git
+cd MarkDownToHtml
 ```
-### Using setup.py 
-You can install Niram module by source code. Download source code from <a href="https://abam.herokuapp.com/projects/Niram">Here</a>
-Download the zip file and unzip the file.(Use ```unzip``` command) Then execute setup.py install.
-```console
-cd Niram-1.0.4
-python3 setup.py install
+Then install the requirements by running the command:
+```sh 
+python -m pip install -r requirements.txt
 ```
 
-## Usage
-```python
-from Niram import Colours
-Colours().colour(colour_code,your_text,second=your_next_colour_code)
+## Usage 
+
+To convert markdown to HTMl run the following command:
+```sh 
+python markdown.py
 ```
-This will return the formated text
-here colour_code is a number of the colour get it by executing
-```console
-python3 -m Niram -c
+This will automatically detect the file named ```README.md``` and convert it to html and save it to ```README.html```. To explicitly enter the input and output files use the following syntex:
+```sh 
+python markdown.py [input_file] [output_file]
 ```
-This will list out all colours and responsible number
-Second argument is your text and third argument "second" is the background colour or any other colour you need 
+
+The html generated have class names and styles similar to github markdown render. (Thanks to ```grip``` python package 😇). You can use the stylesheet and script given below to apply those styles.
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AVC-Tech/MarkDownToHtml@1.0.0/markdown.css" type="text/css" media="all" />
+<script src="https://cdn.jsdelivr.net/gh/AVC-Tech/MarkDownToHtml@1.0.0/markdown.js" type="text/javascript" charset="utf-8"></script>
+```
+
+Note : The generated file doesnt contain full html script. it only has the elements for your markdown. You can copy and paste it anywhere you want and just include the styles to the page.
 
 ## Requirements
- This module don't need any additional requirements
+- Python
+- Grip

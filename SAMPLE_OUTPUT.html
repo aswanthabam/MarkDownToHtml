@@ -1,0 +1,23 @@
+<div class="Box-body px-5 pb-5"><article id="grip-content" class="markdown-body entry-content container-lg"><h1><a id="user-content-markdown-to-html" class="anchor" aria-hidden="true" href="#markdown-to-html"><span aria-hidden="true" class="octicon octicon-link"></span></a>Markdown To HTML</h1>
+<p><a href="https://abam.herokuapp.com/projects/Niram" rel="nofollow"><img src="https://camo.githubusercontent.com/e3d3af3c11bbb286cf4725338b6c27168d94dea4189f01beb756a2f92ca559a9/68747470733a2f2f62616467656e2e6e65742f62616467652f4142414d2f766965772f" alt="ABAM" data-canonical-src="https://badgen.net/badge/ABAM/view/" style="max-width: 100%;"></a></p>
+<h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+<p>First you need to install <code>python</code> and <code>pip</code>.Then clone the git repository and move to that directory:</p>
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/AVC-Tech/MarkDownToHtml.git
+<span class="pl-c1">cd</span> MarkDownToHtml</pre></div>
+<p>Then install the requirements by running the command:</p>
+<div class="highlight highlight-source-shell"><pre>python -m pip install -r requirements.txt</pre></div>
+<h2><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+<p>To convert markdown to HTMl run the following command:</p>
+<div class="highlight highlight-source-shell"><pre>python markdown.py</pre></div>
+<p>This will automatically detect the file named <code>README.md</code> and convert it to html and save it to <code>README.html</code>. To explicitly enter the input and output files use the following syntex:</p>
+<div class="highlight highlight-source-shell"><pre>python markdown.py [input_file] [output_file]</pre></div>
+<p>The html generated have class names and styles similar to github markdown render. (Thanks to <code>grip</code> python package <g-emoji class="g-emoji" alias="innocent" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f607.png">😇</g-emoji>). You can use the stylesheet and script given below to apply those styles.</p>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">rel</span>="<span class="pl-s">stylesheet</span>" <span class="pl-c1">href</span>="<span class="pl-s">https://cdn.jsdelivr.net/gh/AVC-Tech/MarkDownToHtml@1.0.0/markdown.css</span>" <span class="pl-c1">type</span>="<span class="pl-s">text/css</span>" <span class="pl-c1">media</span>="<span class="pl-s">all</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">src</span>="<span class="pl-s">https://cdn.jsdelivr.net/gh/AVC-Tech/MarkDownToHtml@1.0.0/markdown.js</span>" <span class="pl-c1">type</span>="<span class="pl-s">text/javascript</span>" <span class="pl-c1">charset</span>="<span class="pl-s">utf-8</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
+<p>Note : The generated file doesnt contain full html script. it only has the elements for your markdown. You can copy and paste it anywhere you want and just include the styles to the page.</p>
+<h2><a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+<ul>
+<li>Python</li>
+<li>Grip</li>
+</ul>
+</div></article>
